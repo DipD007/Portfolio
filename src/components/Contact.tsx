@@ -25,7 +25,6 @@ const Contact: React.FC<ContactProps> = ({ darkMode }) => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
 
-    // TODO: Replace these with your actual EmailJS service/template/user IDs
     const SERVICE_ID = 'service_3l2x6v8';
     const TEMPLATE_ID = 'template_x2ugux9';
     const USER_ID = 'BRpwhuk14-2Ueibjw';
@@ -69,38 +68,6 @@ const Contact: React.FC<ContactProps> = ({ darkMode }) => {
       color: 'text-red-500',
     },
   ];
-  // const socialLinks = [
-  //   {
-  //     icon: Facebook,
-  //     name: 'Facebook',
-  //     url: 'https://www.facebook.com/Mr.SudiptaMandal007',
-  //     color: 'hover:text-blue-600',
-  //     bgColor: 'hover:bg-blue-50 dark:hover:bg-blue-900/20',
-  //   },
-  //   {
-  //     icon: Instagram,
-  //     name: 'Instagram',
-  //     url: 'https://www.instagram.com/_sudipta_mandal007/',
-  //     color: 'hover:text-red-500',
-  //     bgColor: 'hover:bg-red-50 dark:hover:bg-red-900/20',
-  //   },
-  //   {
-  //     icon: Linkedin,
-  //     name: 'LinkedIn',
-  //     url: 'https://www.linkedin.com/in/sudipta-mandal-267907223/',
-  //     color: 'hover:text-blue-600',
-  //     bgColor: 'hover:bg-blue-50 dark:hover:bg-blue-900/20',
-  //   },
-    
-  //   {
-  //     icon: MessageCircle,
-  //     name: 'Discord',
-  //     url: 'https://discord.com',
-  //     color: 'hover:text-purple-600',
-  //     bgColor: 'hover:bg-purple-50 dark:hover:bg-purple-900/20',
-  //   },
-  // ];
-
   const socialLinks = [
     {
       icon: Facebook,
@@ -135,12 +102,12 @@ const Contact: React.FC<ContactProps> = ({ darkMode }) => {
   return (
     <section id="contact" className={`py-20 ${darkMode ? 'bg-gray-800' : 'bg-gray-50'}`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16 cursor-hover-scale">
+        <div className="text-center mb-8 cursor-hover-scale">
           <h2 className={`text-4xl sm:text-5xl font-bold mb-4 ${darkMode ? 'text-white' : 'text-gray-900'}`}>
             Get In Touch
           </h2>
           <p className={`text-lg max-w-2xl mx-auto ${darkMode ? 'text-gray-400' : 'text-gray-600'}`}>
-            I'm always open to discussing new opportunities, projects, or just having a chat about technology
+            I'm always open to discussing new opportunities, projects, or just having a chat with me
           </p>
         </div>
 
@@ -151,10 +118,6 @@ const Contact: React.FC<ContactProps> = ({ darkMode }) => {
               <h3 className={`text-3xl font-bold mb-6 ${darkMode ? 'text-white' : 'text-gray-900'}`}>
                 Let's Connect
               </h3>
-              <p className={`text-lg mb-8 leading-relaxed ${darkMode ? 'text-gray-300' : 'text-gray-700'}`}>
-                Whether you have a project in mind, want to collaborate, or just want to say hello, 
-                I'd love to hear from you. Feel free to reach out through any of the channels below.
-              </p>
             </div>
 
             <div className="space-y-6">
